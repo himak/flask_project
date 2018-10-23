@@ -5,7 +5,8 @@ sed -i 'AcceptEnv/s/^#*/#/' /etc/ssh/sshd_config
 
 # install Python3.6
 apt-get install software-properties-common
-apt-get-repositary ppa:deadsnakes/ppa
+# python3.6 is not in default apt package, we add new package repositar "ppa"
+add-apt-repository ppa:deadsnakes/ppa
 apt-get update
 apt-get install -y python3.6
 
