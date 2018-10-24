@@ -10,7 +10,7 @@ SSH access to virtual machine for terminal (default username and password is "va
 $ vagrant ssh
 ```
 
-Synchronized source files are located:
+Synchronized source files in host machine are located in virtual machine:
 ```sh
-$ cd /vagrant
+$ cd /vagrant/
 ```
