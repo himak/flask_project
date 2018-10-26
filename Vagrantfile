@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
   end
 
   # public network => bridged
-  #config.vm.network "public_network", bridge: "en0: Wi-Fi (Wireless)"
+  config.vm.network "public_network", bridge: "en0: Wi-Fi (Wireless)"
   #config.vm.network "public_network", bridge: "en8: Apple USB Ethernet Adapter"
 
   # install & configure software
