@@ -43,7 +43,7 @@ $ . venv/bin/activate
 Run App
 ```sh
 $ export FLASK_APP=app.py
-$ flask run
+$ flask run --host 0.0.0.0
 ```
 
 or
