@@ -17,3 +17,7 @@ def view_admin_name(name):
 @flask_app.route("/article/<int:art_id>")
 def view_article(art_id):
 	return "Article {}".format(art_id)
+
+@flask_app.route("/article/<int:art_id>/schwifty/<float:foo>")
+def view_schwifty_article(art_id, foo):
+	return "Article {} schwifty: {}".format(art_id, foo)

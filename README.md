@@ -17,10 +17,9 @@ Synchronized source files in host machine are located in virtual machine:
 $ cd /vagrant/
 ```
 
-Create VirtualEnv
+Create Virtualenv
 ```sh
 $ virtualenv venv
-$ . venv/bin/activate
 ```
 
 Install Flask
@@ -30,6 +29,12 @@ $ pip install flask
 
 ## Start APP
 
+Start Vagrant box
+```sh
+$ vagrant up
+$ vagrant ssh
+```
+
 View your IP address
 ```sh
 $ ifconfig
@@ -37,19 +42,20 @@ $ ifconfig
 
 Activate VirtualEnv
 ```sh
+$ cd /vagrant/
 $ . venv/bin/activate
 ```
 
 Run App
 ```sh
-$ export FLASK_APP=app.py
-$ flask run
+$ python run.py
 ```
 
 or
 
 ```sh
-$ python run.py
+$ export FLASK_APP=app.py
+$ flask run --host 0.0.0.0
 ```
 
 Open your favorite browser in your host machine and open URL:
