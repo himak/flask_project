@@ -63,3 +63,8 @@ Open your favorite browser in your host machine and open URL:
 http://YOUR_IP_ADDRESS:5000
 ```
 now you should see "Hello World"
+
+
+Slide from ProgressBar Flask blog
+
+http://slides.com/marekmansell/flask-tutorial#/
