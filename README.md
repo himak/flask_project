@@ -22,6 +22,11 @@ Create Virtualenv
 $ virtualenv venv
 ```
 
+Activate VirtualEnv
+```sh
+$ . venv/bin/activate
+```
+
 Install Flask
 ```sh
 $ pip install flask
